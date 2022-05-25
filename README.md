@@ -35,9 +35,10 @@ I will outline the steps I have gone through in the build section below. I will 
 - [x] Handle the colours - add our colours to the config file in the theme object
 - [x] Handle the fonts - from google, link to the head, add to the config file
 - [x] Add the background colour to the body
-- [] Think about the layout - flex, grid, containers
+- [x] Added the content with basic colours, padding and margin
+- [x] Used HTML5 semantic tags for accessibility (see note below)
+- [x] Built the responsive grid
 - [] Think about responsive design by using the built in Tailwind breakpoints
-- [] Remember to use semantic HTML5 tags for accessibility
 - [] Build the UI
 - [] Think about responsive images
 
@@ -46,3 +47,9 @@ I will outline the steps I have gone through in the build section below. I will 
 [] Write some javascript to animate the numbers so they count up
 
 ## Notes
+
+- I have used the section tag for the main outer wrapper of the card, the article tag that wraps all the content and the main tag to wrap the left hand side of the card which contains the text which could be described as the main content of the card.
+
+- The main title I made an h2 heading because this card would likely be a component for a larger site and for SEO there should only be one h1 on each page, but you can have multiple h2 headings.
+
+- I have put the font weight, font size and font family utitiles for the body copy on the body tag to take advantage of the cascading nature of CSS so that I won't have to put font-inter etc on each p tag.
