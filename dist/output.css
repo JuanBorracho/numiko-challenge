@@ -668,6 +668,16 @@ Ensure the default browser behavior of the `hidden` attribute.
   mix-blend-mode: soft-light;
 }
 
+@media (min-width: 640px) {
+  .sm\:rounded-bl-lg {
+    border-bottom-left-radius: 0.5rem;
+  }
+
+  .sm\:rounded-br-lg {
+    border-bottom-right-radius: 0.5rem;
+  }
+}
+
 @media (min-width: 768px) {
   .md\:order-1 {
     order: 1;
@@ -725,6 +735,18 @@ Ensure the default browser behavior of the `hidden` attribute.
     border-bottom-right-radius: 0.5rem;
   }
 
+  .md\:rounded-br-none {
+    border-bottom-right-radius: 0px;
+  }
+
+  .md\:rounded-bl-none {
+    border-bottom-left-radius: 0px;
+  }
+
+  .md\:rounded-tl-none {
+    border-top-left-radius: 0px;
+  }
+
   .md\:px-14 {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
@@ -744,5 +766,9 @@ Ensure the default browser behavior of the `hidden` attribute.
 
   .md\:text-4xl {
     font-size: 2.25rem;
+  }
+
+  .first-line\:md\:rounded-tl-lg::first-line {
+    border-top-left-radius: 0.5rem;
   }
 }

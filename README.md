@@ -51,8 +51,8 @@ I will outline the steps I have gone through in the build section below. I will 
 
 - [x] create a js file, link it in the script tag, console.log('it works) to check
 - [x] Write some javascript to animate the numbers so they count up (see notes)
-- [] Install GSAP
-- [] Refactor code using GSAP
+- [x] Install GSAP using the CDN
+- [x] Refactor code using GSAP (see note)
 
 ## Deployment
 
@@ -79,5 +79,13 @@ I will outline the steps I have gone through in the build section below. I will 
 - My idea for the JavaScript was to animate the numbers so they count up from zero.
 
 - I initially researched how to do this with vanilla JS but I wasn't happy with the implementation. It worked, but the numbers didn't stop at the same time - 314 kept going after 10 and 12 had finished.
+
+- Therefore I looked into using GSAP. This is something I am really interested in and am currently teaching myself in my own time so that I can add it to my current project in my current role.
+
+- I found some tutorials and was quite amazed by how I was able to refactor the vanilla JS code to just three lines using GSAP, with a better result. I have left the vanilla JS code in but commented out.
+
+- By using the gsap.to tween you can target the innerText directly. Then you can use the snap plugin to define the increment you want it to count up in.
+
+- By using GSAP, all the numbers finishing animating at the same time.
 
 ## Final Reflections
