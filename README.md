@@ -41,9 +41,9 @@ I will outline the steps I have gone through in the build section below. I will 
 - [x] Add the colour overlay to the image using blend modes
 - [x] Think about responsive images - is this the way to do it (see note below)?
 - [x] Add line heights using the leading utlity classes
+- [x] Changed font size to 15px by using rem (see note below)
+- [] Sort spacing
 - [] Add mobile styles for text
-- [] Line clamp plugin?
-- []
 
 ## JavaScript
 
@@ -62,3 +62,5 @@ I will outline the steps I have gone through in the build section below. I will 
 - As you gave me two images, one for mobile and one for desktop, I am guessing you want me to use both. Usually I would have just used one and set the height and width with object-fit: cover. However, I knew there was a way to use srcset to serve different versions of the same image depending on screen size. I read into this and tried to implement it [using this article for help.](https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/) I would like to learn more about this as I am not fully confident with it yet.
 
 - The other way to handle images would be the aspect-ratio utilties from Tailwind.
+
+- I was using the built in font size utilites from Tailwind, but these go up in increments of 4 and in the style guide it said the body text should be 15px. By looking at the docs I could see text-sm equates to 14px (0.875rem). So I divided 15px by 16px (the default font size of the browser) to get 0.9375, which is the value you use for rem. Then I updated the text-sm utility in the config file. I also removed the rest of the font sizes from the object, just keeping the ones I am using.

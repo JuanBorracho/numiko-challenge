@@ -20,6 +20,11 @@ module.exports = {
       inter: ['Inter', 'sans-serif'],
       lexendDeca: ['Lexend Deca', 'sans-serif'],
     },
+    fontSize: {
+      sm: '.9375rem',
+      '2xl': '1.5rem',
+      '4xl': '2.25rem',
+    },
     extend: {},
   },
   plugins: [],
