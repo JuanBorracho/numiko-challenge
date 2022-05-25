@@ -56,8 +56,7 @@ I will outline the steps I have gone through in the build section below. I will 
 
 ## Deployment
 
-[] Look into how to use autoprefixer with tailwind
-[] Setup a Gulpfile to copy index to dist and minify Javascript
+[x] Setup a Gulpfile to copy index to dist and minify Javascript
 [] Deploy to netlify
 
 ## Notes on the build process
@@ -89,3 +88,9 @@ I will outline the steps I have gone through in the build section below. I will 
 - By using GSAP, all the numbers finishing animating at the same time.
 
 ## Final Reflections
+
+- This project took me longer than expected because I had never used Tailwind before. Overall I really enjoyed it and next time I use it I will definitely be faster. I'd love to learn more about how Tailwind works.
+
+- I am aware that Tailwind is particularly good for component based frameworks like React. This is because there is a danger of duplicating utility classes a lot in the code, but with components, you only have to do it once, then import the component wherever you want to use it.
+
+- One way I could improve this is that the animated numbers currently run only once when the page loads. But on mobile, this means the animation might finish before the user gets to it. Therefore I could change this so that the animation runs once the user scrolls to a certain point on the page.

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/dist/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap"
+      rel="stylesheet"
+    />
+    <title>Numiko Challenge</title>
+  </head>
+  <body class="bg-dark-blue font-normal font-inter text-sm">
+    <section class="px-8 pt-28 pb-28">
+      <article
+        class="grid grid-cols-1 md:grid-cols-2 justify-between max-w-6xl mx-auto"
+      >
+        <div
+          class="order-2 md:order-1 bg-blue text-center md:text-left pt-8 px-6 pb-6 md:pt-20 md:px-14 md:pb-20 rounded-br-lg rounded-bl-lg md:rounded-br-none md:rounded-tl-lg"
+        >
+          <main
+            class="md:max-w-sm flex-col justify-center items-center md:block"
+          >
+            <h2
+              class="text-white-100 mb-5 md:mb-10 text-3xl md:text-4xl font-lexendDeca font-bold leading-tight"
+            >
+              Get <span class="text-violet-100">insights</span> that help your
+              business grow.
+            </h2>
+
+            <p class="text-white-75 mb-7 md:mb-20 leading-relaxed">
+              Discover the benefits of data analytics and make better decisions
+              regarding revenue, customer experience, and overall efficiency.
+            </p>
+
+            <div class="flex flex-col md:flex-row md:justify-between">
+              <div class="mb-6 md:mb-0">
+                <p class="text-white-100 uppercase font-bold text-2xl">
+                  <span
+                    class="text-white-100 font-bold"
+                    data-number="10"
+                    id="counter10"
+                  ></span
+                  >K+
+                </p>
+                <p class="text-white-60 uppercase text-xs tracking-widest">
+                  Companies
+                </p>
+              </div>
+
+              <div class="mb-6 md:mb-0">
+                <p
+                  class="text-white-100 uppercase font-bold text-2xl"
+                  data-number="314"
+                  id="counter314"
+                ></p>
+                <p class="text-white-60 uppercase text-xs tracking-widest">
+                  Templates
+                </p>
+              </div>
+
+              <div class="mb-6 md:mb-0">
+                <p class="text-white-100 uppercase font-bold text-2xl">
+                  <span
+                    class="text-white-100 font-bold"
+                    data-number="12"
+                    id="counter12"
+                  ></span
+                  >M+
+                </p>
+                <p class="text-white-60 uppercase text-xs tracking-widest">
+                  Queries
+                </p>
+              </div>
+            </div>
+          </main>
+        </div>
+
+        <div
+          class="order-1 md:order-2 bg-violet-75 rounded-tr-lg md:rounded-tl-none md:rounded-br-lg rounded-tl-lg"
+        >
+          <picture>
+            <img
+              class="h-full object-cover mix-blend-soft-light"
+              srcset="
+                /dist/images/image-header-desktop.jpeg 540w,
+                /dist/images/image-header-mobile.jpeg  654w
+              "
+              sizes="100%"
+              src="/dist/image-header-desktop.jpeg"
+              alt="card-image-header"
+            />
+          </picture>
+        </div>
+      </article>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="./main.js"></script>
+  </body>
+</html>
