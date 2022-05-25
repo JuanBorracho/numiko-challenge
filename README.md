@@ -50,7 +50,7 @@ I will outline the steps I have gone through in the build section below. I will 
 ## JavaScript
 
 - [x] create a js file, link it in the script tag, console.log('it works) to check
-- [] Write some javascript to animate the numbers so they count up
+- [x] Write some javascript to animate the numbers so they count up (see notes)
 - [] Install GSAP
 - [] Refactor code using GSAP
 
@@ -75,5 +75,9 @@ I will outline the steps I have gone through in the build section below. I will 
 - The other way to handle images would be the aspect-ratio utilties from Tailwind.
 
 - I was using the built in font size utilites from Tailwind, but these go up in increments of 4 and in the style guide it said the body text should be 15px. By looking at the docs I could see text-sm equates to 14px (0.875rem). So I divided 15px by 16px (the default font size of the browser) to get 0.9375, which is the value you use for rem. Then I updated the text-sm utility in the config file. I also removed the rest of the font sizes from the object, just keeping the ones I am using.
+
+- My idea for the JavaScript was to animate the numbers so they count up from zero.
+
+- I initially researched how to do this with vanilla JS but I wasn't happy with the implementation. It worked, but the numbers didn't stop at the same time - 314 kept going after 10 and 12 had finished.
 
 ## Final Reflections
