@@ -42,14 +42,24 @@ I will outline the steps I have gone through in the build section below. I will 
 - [x] Think about responsive images - is this the way to do it (see note below)?
 - [x] Add line heights using the leading utlity classes
 - [x] Changed font size to 15px by using rem (see note below)
-- [] Sort spacing
-- [] Add mobile styles for text
+- [x] Sort padding of main element
+- [x] Change font size of the stat text and change letter spacing
+- [x] Add border radius on edges and make responsive
+- [x] Add mobile padding and flex-direction styles
 
 ## JavaScript
 
 [] Write some javascript to animate the numbers so they count up
+[] Install GSAP
+[] Refactor code using GSAP
 
-## Notes
+## Deployment
+
+[] Look into how to use autoprefixer with tailwind
+[] Setup a Gulpfile to copy index to dist and minify Javascript
+[] Deploy to netlify
+
+## Notes on the build process
 
 - I have used the section tag for the main outer wrapper of the card, the article tag that wraps all the content and the main tag to wrap the left hand side of the card which contains the text which could be described as the main content of the card.
 
@@ -64,3 +74,5 @@ I will outline the steps I have gone through in the build section below. I will 
 - The other way to handle images would be the aspect-ratio utilties from Tailwind.
 
 - I was using the built in font size utilites from Tailwind, but these go up in increments of 4 and in the style guide it said the body text should be 15px. By looking at the docs I could see text-sm equates to 14px (0.875rem). So I divided 15px by 16px (the default font size of the browser) to get 0.9375, which is the value you use for rem. Then I updated the text-sm utility in the config file. I also removed the rest of the font sizes from the object, just keeping the ones I am using.
+
+## Final Reflections
