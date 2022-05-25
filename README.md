@@ -38,8 +38,7 @@ I will outline the steps I have gone through in the build section below. I will 
 - [x] Added the content with basic colours, padding and margin
 - [x] Used HTML5 semantic tags for accessibility (see note below)
 - [x] Built the responsive grid
-- [] Think about responsive design by using the built in Tailwind breakpoints
-- [] Build the UI
+- [x] Added the colour overlay to the image using blend modes
 - [] Think about responsive images
 
 ## JavaScript
@@ -53,3 +52,5 @@ I will outline the steps I have gone through in the build section below. I will 
 - The main title I made an h2 heading because this card would likely be a component for a larger site and for SEO there should only be one h1 on each page, but you can have multiple h2 headings.
 
 - I have put the font weight, font size and font family utitiles for the body copy on the body tag to take advantage of the cascading nature of CSS so that I won't have to put font-inter etc on each p tag.
+
+- I spent some time on the image overlay. First I tried the technique of using an empty div as a background and then setting the opacity. However, even when adjusting the opacity and the colour, this still didn't look close enough to the design. Therefore I tried using the Tailwind utitilies for mix-blend-mode and adjusted the overlay colour slightly until I found a combination that was close enough to the design.
