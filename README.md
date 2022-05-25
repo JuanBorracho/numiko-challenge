@@ -32,13 +32,14 @@ I will outline the steps I have gone through in the build section below. I will 
 
 ## HTML & CSS Build
 
-[] Handle the colours - add our colours to the config file
-[] Handle the fonts - from google, link to the head, add to the config file
-[] Think about the layout - flex, grid, containers
-[] Think about responsive design by using the built in Tailwind breakpoints
-[] Remember to use semantic HTML5 tags for accessibility
-[] Build the UI
-[] Think about responsive images
+- [x] Handle the colours - add our colours to the config file in the theme object
+- [x] Handle the fonts - from google, link to the head, add to the config file
+- [x] Add the background colour to the body
+- [] Think about the layout - flex, grid, containers
+- [] Think about responsive design by using the built in Tailwind breakpoints
+- [] Remember to use semantic HTML5 tags for accessibility
+- [] Build the UI
+- [] Think about responsive images
 
 ## JavaScript
 
