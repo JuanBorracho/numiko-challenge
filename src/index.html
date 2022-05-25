@@ -14,7 +14,7 @@
     <title>Numiko Challenge</title>
   </head>
   <body class="bg-dark-blue font-normal font-inter text-sm">
-    <section class="px-8 pt-28 pb-8">
+    <section class="px-8 pt-28 pb-28">
       <article
         class="grid grid-cols-1 md:grid-cols-2 justify-between max-w-6xl mx-auto"
       >
@@ -22,12 +22,14 @@
           class="order-2 md:order-1 bg-blue text-center md:text-left pt-20 px-10 pb-20"
         >
           <main class="max-w-md">
-            <h2 class="text-white-100 mb-10 text-4xl font-lexendDeca font-bold">
+            <h2
+              class="text-white-100 mb-10 text-4xl font-lexendDeca font-bold leading-tight"
+            >
               Get <span class="text-violet-100">insights</span> that help your
               business grow.
             </h2>
 
-            <p class="text-white-75 mb-20">
+            <p class="text-white-75 mb-20 leading-relaxed">
               Discover the benefits of data analytics and make better decisions
               regarding revenue, customer experience, and overall efficiency
             </p>
@@ -52,11 +54,18 @@
         </div>
 
         <div class="order-1 md:order-2 bg-violet-75">
-          <img
-            class="h-full w-full object-cover mix-blend-soft-light"
-            src="/dist/images/image-header-desktop.jpeg"
-            alt="card-image-header"
-          />
+          <picture>
+            <img
+              class="h-full object-cover mix-blend-soft-light"
+              srcset="
+                /dist/images/image-header-desktop.jpeg 540w,
+                /dist/images/image-header-mobile.jpeg  654w
+              "
+              sizes="100%"
+              src="/dist/image-header-desktop.jpeg"
+              alt="card-image-header"
+            />
+          </picture>
         </div>
       </article>
     </section>

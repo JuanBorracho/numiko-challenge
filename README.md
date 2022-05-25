@@ -35,11 +35,15 @@ I will outline the steps I have gone through in the build section below. I will 
 - [x] Handle the colours - add our colours to the config file in the theme object
 - [x] Handle the fonts - from google, link to the head, add to the config file
 - [x] Add the background colour to the body
-- [x] Added the content with basic colours, padding and margin
-- [x] Used HTML5 semantic tags for accessibility (see note below)
-- [x] Built the responsive grid
-- [x] Added the colour overlay to the image using blend modes
-- [] Think about responsive images
+- [x] Add the content with basic colours, padding and margin
+- [x] Use HTML5 semantic tags for accessibility (see note below)
+- [x] Build the responsive grid
+- [x] Add the colour overlay to the image using blend modes
+- [x] Think about responsive images - is this the way to do it (see note below)?
+- [x] Add line heights using the leading utlity classes
+- [] Add mobile styles for text
+- [] Line clamp plugin?
+- []
 
 ## JavaScript
 
@@ -54,3 +58,7 @@ I will outline the steps I have gone through in the build section below. I will 
 - I have put the font weight, font size and font family utitiles for the body copy on the body tag to take advantage of the cascading nature of CSS so that I won't have to put font-inter etc on each p tag.
 
 - I spent some time on the image overlay. First I tried the technique of using an empty div as a background and then setting the opacity. However, even when adjusting the opacity and the colour, this still didn't look close enough to the design. Therefore I tried using the Tailwind utitilies for mix-blend-mode and adjusted the overlay colour slightly until I found a combination that was close enough to the design.
+
+- As you gave me two images, one for mobile and one for desktop, I am guessing you want me to use both. Usually I would have just used one and set the height and width with object-fit: cover. However, I knew there was a way to use srcset to serve different versions of the same image depending on screen size. I read into this and tried to implement it [using this article for help.](https://www.smashingmagazine.com/2014/05/responsive-images-done-right-guide-picture-srcset/) I would like to learn more about this as I am not fully confident with it yet.
+
+- The other way to handle images would be the aspect-ratio utilties from Tailwind.
