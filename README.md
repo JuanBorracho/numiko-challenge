@@ -12,6 +12,14 @@ I will just use HTML for this project, rather than a framework such as React.
 
 I will outline the steps I have gone through in the build section below. I will also write some notes in a notes section to explain my code.
 
+## Technology used in this project
+
+- HTML5
+- Tailwind CSS
+- JavaScript
+- GSAP
+- Gulp
+
 ## Setup
 
 - [x] Make new directory
@@ -57,7 +65,7 @@ I will outline the steps I have gone through in the build section below. I will 
 ## Deployment
 
 [x] Setup a Gulpfile to copy index to dist and minify Javascript
-[] Deploy to netlify
+[x] Deploy to netlify
 
 ## Notes on the build process
 
