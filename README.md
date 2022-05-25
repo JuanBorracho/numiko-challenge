@@ -1,3 +1,17 @@
+# Numiko Challenge
+
+## Think before you code!
+
+For this challenge I have decided to use Tailwind css. I am aware of Tailwind and have watched some tutorials on it before, but I have never actually used it in a project. This will be the first time.
+
+In my current role I am using Bootstrap 5 and Sass, but I am keen to try Tailwind as I like the utilty first approach and the fact you can build entire projects with little or none custom css.
+
+I will be reading the documentation for how to implement it.
+
+I will just use HTML for this project, rather than a framework such as React.
+
+I will outline the steps I have gone through in the build section below. I will also write some notes in a notes section to explain my code.
+
 ## Setup
 
 - [x] Make new directory
@@ -15,3 +29,19 @@
 - [x] Link to the compiled tailwind file in the head tag
 - [x] Install tailwind intellisense vs code extension
 - [x] Test that it works with Hello World and commit
+
+## HTML & CSS Build
+
+[] Handle the colours - add our colours to the config file
+[] Handle the fonts - from google, link to the head, add to the config file
+[] Think about the layout - flex, grid, containers
+[] Think about responsive design by using the built in Tailwind breakpoints
+[] Remember to use semantic HTML5 tags for accessibility
+[] Build the UI
+[] Think about responsive images
+
+## JavaScript
+
+[] Write some javascript to animate the numbers so they count up
+
+## Notes
