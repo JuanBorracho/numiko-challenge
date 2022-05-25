@@ -49,9 +49,10 @@ I will outline the steps I have gone through in the build section below. I will 
 
 ## JavaScript
 
-[] Write some javascript to animate the numbers so they count up
-[] Install GSAP
-[] Refactor code using GSAP
+- [x] create a js file, link it in the script tag, console.log('it works) to check
+- [] Write some javascript to animate the numbers so they count up
+- [] Install GSAP
+- [] Refactor code using GSAP
 
 ## Deployment
 
