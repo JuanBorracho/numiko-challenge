@@ -64,8 +64,8 @@ I will outline the steps I have gone through in the build section below. I will 
 
 ## Deployment
 
-[x] Setup a Gulpfile to copy index to dist and minify Javascript
-[x] Deploy to netlify
+- [x] Setup a Gulpfile to copy index to dist and minify Javascript
+- [x] Deploy to netlify
 
 ## Notes on the build process
 
